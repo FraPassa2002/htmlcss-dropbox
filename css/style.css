@@ -1,0 +1,121 @@
+/* 
+    RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    GENERAL
+*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mini-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+    HEADER
+*/
+
+/* HEADER-TOP */
+.header-top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-top > * {
+    width: calc(100% / 2);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-top > div:last-child {
+    justify-content:flex-end;
+}
+
+.header-top > * > * {
+    padding: 20px;
+}
+
+
+/* HEADER-BOTTOM */
+
+.header-bottom-down {
+    display: flex;
+    justify-content: justify;
+
+
+}
+
+.header-bottom img {
+    width: 100%;
+}
+
+.header-bottom-down > div:first-child {
+    width: calc((100% / 3) * 1);
+}
+
+.header-bottom-down > div:last-child {
+    width: calc((100% / 3) * 2);
+}
+
+
+/* 
+    MAIN
+*/
+
+/* 
+    FOOTER
+*/
+
+/* 
+    DEBUG
+*/
+.debug header .header-top > * {
+    background-color: turquoise;
+    border: 2px dashed green;
+    height: 7vh;
+}
+
+
+.debug header .header-bottom {
+    background-color: #3F48CC;
+    height: 700px;
+    border: 2px dashed red;
+    
+}
+
+.debug header .header-bottom .header-bottom-up {
+    height: 300px;
+    background-color: red;
+    border: 2px dashed yellow;
+
+}
+
+.debug header .header-bottom .header-bottom-down {
+    height: 400px;
+    background-color: green;
+    border: 2px dashed yellow;
+}
+
+.debug header .header-bottom .header-bottom-down > * {
+    border: 2px dashed blue;
+}
+
