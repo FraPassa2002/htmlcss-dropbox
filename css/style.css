@@ -28,6 +28,18 @@ a {
     text-decoration: none;
 }
 
+main > * {
+    margin: 20px;
+}
+
+.my-col-1-3 {
+    width: calc((100% / 3) * 1);
+}
+
+.my-col-2-3 {
+    width: calc((100% / 3) * 2);
+}
+
 /* 
     HEADER
 */
@@ -56,12 +68,24 @@ a {
 
 
 /* HEADER-BOTTOM */
+.header-bottom {
+    background: linear-gradient(
+    to top,
+    white 0%,
+    white 10%,
+    #676ecd 10%,
+    #676ecd 100%
+  );
+}
+
+.header-bottom-up {
+    margin-top: 30px;
+}
+
 
 .header-bottom-down {
     display: flex;
     justify-content: justify;
-
-
 }
 
 .header-bottom img {
@@ -69,17 +93,46 @@ a {
 }
 
 .header-bottom-down > div:first-child {
-    width: calc((100% / 3) * 1);
-}
-
-.header-bottom-down > div:last-child {
-    width: calc((100% / 3) * 2);
+    height: 370px;
 }
 
 
 /* 
     MAIN
 */
+
+.mini-container > * {
+    margin: 10px;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.my-row {
+    margin: 10px;
+}
+
+.my-card {
+    width: calc((100% / 3) - 20px);
+    border: 1px solid lightgray;
+}
+
+.card-icon {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.card-supply > hr {
+    border: 1px solid lightgray;
+    width: 70px;
+}
+
+.product-container > *:not(:first-child) {
+    margin-top: 20px;
+}
 
 /* 
     FOOTER
@@ -96,10 +149,9 @@ a {
 
 
 .debug header .header-bottom {
-    background-color: #3F48CC;
-    height: 700px;
-    border: 2px dashed red;
-    
+    /* background-color: #3F48CC; */
+    height: 780px;
+    border: 2px dashed red;    
 }
 
 .debug header .header-bottom .header-bottom-up {
@@ -119,3 +171,17 @@ a {
     border: 2px dashed blue;
 }
 
+/* MAIN */
+.debug main .mini-container {
+    background-color: chartreuse;
+}
+
+.debug main .mini-container h2 {
+    background-color: red;
+    border: 2px dashed blue;
+}
+
+.debug main .mini-container div:first-of-type {
+    background-color: red;
+    border: 2px dashed blue;
+}
