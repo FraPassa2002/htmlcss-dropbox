@@ -118,8 +118,11 @@ main > * {
 
 .my-card-1-3 {
     width: calc((100% / 3) - 20px);
-    border: 1px solid lightgray;
     margin-bottom: 30px;
+}
+
+.my-row .my-card-1-3{
+    border: 1px solid lightgray;
 }
 
 .card-icon {
@@ -164,6 +167,27 @@ main > * {
     width: calc(100% - 100px);
     margin: 50px;
 }
+
+.my-row-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.my-row-4 .my-card-1-3 img {
+    width: calc(100% - 40px);
+    
+}
+
+.my-row-4 .my-card-1-3 > * {
+    margin: 20px;
+}
+
+section .product-container > * {
+    margin: 20px;
+}
+
 
 
 /* 
@@ -231,10 +255,15 @@ main > * {
     border: 2px dashed purple;
 }
 
-.debug .my-row-3 {
+.debug .my-row-3, .debug .my-row-4 {
     background-color: purple;
 }
 
-.debug .my-row-3 > * {
+.debug .my-row-3 > *, .debug .my-row-4 > * {
     border: 2px dashed orangered;
+}
+
+.debug section{
+    background-color: red;
+    min-height: 100px;
 }
