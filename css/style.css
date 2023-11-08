@@ -40,6 +40,43 @@ main > * {
     width: calc((100% / 3) * 2);
 }
 
+.green {
+    background-color: #A2D39B;
+}
+
+.brown {
+    background-color: #61082B;
+}
+
+.cyan {
+    background-color: #0093CE;
+}
+
+.blood-red {
+    background-color: #FF1C1C;
+}
+
+.red {
+    background-color: #D5001F;
+}
+
+.gray {
+    background-color: #B4D0E7;
+}
+
+.blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
 /* 
     HEADER
 */
@@ -189,10 +226,85 @@ section .product-container > * {
 }
 
 
+.rectangle {
+    width: 100vw;
+}
+
+.rectangle-container {
+    display: flex;
+}
+
+.my-square {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.my-little-square {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+}
+
+
+.my-row-5{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.my-row-5 .my-col-2-3,.my-col-1-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-row-5 .my-col-2-3 img {
+    width: calc(100% - 100px);
+    margin: 50px;
+}
+
+.question .mini-container {
+    margin-bottom: 30px;
+}
+
+.question .mini-container h3{
+    margin-bottom: 30px;
+}
+
+.question .mini-container p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
 
 /* 
     FOOTER
 */
+
+.footer-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.my-row-6 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.my-col-1-5 > * {
+    padding: 10px;
+}
+
+.my-col-1-5 > ul > * {
+    padding: 5px;
+}
+
+
 
 /* 
     DEBUG
@@ -230,6 +342,8 @@ section .product-container > * {
 /* MAIN */
 .debug main .mini-container {
     background-color: #676ecd;
+    margin-bottom: 50px ;
+    margin-top: 50px ;
 }
 
 .debug main .mini-container h2 {
@@ -251,6 +365,10 @@ section .product-container > * {
     background-color: red;
 }
 
+.debug .mini-container .my-row .my-card-1-1 .product-container .card-bottom  {
+    min-height: 200px;
+}
+
 .debug .my-col-1-3 ,.debug .my-col-2-3{
     border: 2px dashed purple;
 }
@@ -266,4 +384,37 @@ section .product-container > * {
 .debug section{
     background-color: red;
     min-height: 100px;
+}
+
+.debug .rectangle {
+    background-color: #0093CE;
+}
+
+.debug .my-square {
+    background-color: lightcoral;
+    border: 2px dashed blue;
+    
+
+}
+
+.debug .my-little-square {
+    background-color: aqua;
+    border: 2px dashed yellow;
+}
+
+.debug .my-row-5 {
+    min-height: 300px;
+}
+
+
+.debug footer {
+    background-color: black;
+    min-height: 500px;
+    color: white;
+}
+
+
+.debug .my-row-6 {
+    background-color: purple;
+    border: 2px dashed red;
 }
