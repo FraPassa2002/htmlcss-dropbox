@@ -12,6 +12,7 @@
 */
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -85,6 +86,35 @@ ul {
     margin: 10px;
 }
 
+.botton-white {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 70%;
+    color: black;
+}
+
+.white-button {
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    color: black;
+}
+
+h1{
+    font-size:80px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+hr {
+    width: 20%;
+    border: 1px solid gray;
+}
 
 
 /* 
@@ -133,9 +163,11 @@ ul {
     padding-top: 40px;
 }
 
-h1{
-   font-size:80px;
+a > i {
+    color: black;
 }
+
+
 
 
 .header-bottom-down {
@@ -174,6 +206,15 @@ h1{
     margin: 10px;
 }
 
+.radio-button {
+    margin: 40px;
+}
+
+.radio-button > *{
+    padding-right: 50px;
+    
+}
+
 .my-row {
     display: flex;
     justify-content: space-between;
@@ -197,10 +238,10 @@ h1{
 .card-icon {
     text-align: center;
     border-bottom: 1px solid lightgray;
+    padding: 6px;
 }
 
 .product-container > hr {
-    border: 1px solid lightgray;
     width: 70px;
 }
 
@@ -214,11 +255,48 @@ h1{
 }
 
 
-.card-bottom {
-    display: flex;
-    justify-content: flex-start;
-    
+
+.card-bottom > * {
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
+
+.card-supply > div {
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+ul li span > * {
+    color: #0061FF;
+}
+
+ul > *{
+    margin-bottom: 20px;
+}
+
+.my-card-1-1 .product-container .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-card-1-1 .product-container .card-bottom .my-col-2-3 > h4 {
+    font-size: 25px;
+}
+
+.my-card-1-1 .product-container .card-bottom .my-col-2-3 > div {
+   font-weight: bold;
+}
+
+.my-card-1-1 .product-container .card-bottom .my-col-2-3 > h4 {
+    margin-bottom: 5px;
+}
+
+.my-card-1-1 .product-container .card-bottom .my-col-2-3 > div {
+    margin-bottom: 25px;
+}
+
+
 
 .my-row-3{
     display: flex;
@@ -236,11 +314,27 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 20px;
+}
+
+.my-row-3 > .my-col-1-3 > * > * {
+    margin-bottom: 20px;
+}
+
+.my-row-3 > .my-col-1-3 > * > h4 {
+    font-size: 20px;
 }
 
 .my-row-3 .my-col-2-3 img {
     width: calc(100% - 100px);
     margin: 50px;
+}
+
+section h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 45px;
 }
 
 .my-row-4 {
@@ -259,8 +353,17 @@ h1{
     margin: 20px;
 }
 
+section .product-container {
+    margin-bottom: 200px;
+}
+
 section .product-container > * {
     margin: 20px;
+}
+
+section .product-container > h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -275,21 +378,63 @@ section .product-container > * {
 .my-square {
     width: calc(100vw / 3);
     height: calc(100vw / 3);
+}
 
+.my-square:not(:nth-of-type(2)) {
     display: flex;
     flex-wrap: wrap;
+}
+
+.my-square:nth-of-type(2) {
+    background-color: #F5F5F5;
+}
+
+.my-square:nth-of-type(2) > h2 {
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.my-square:nth-of-type(2) > * {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.my-square:nth-of-type(2) > hr {
+    margin-top:  50px;
+    margin-bottom:  50px;
+    border: 1px solid lightgray;
 
 }
+
+.my-square:nth-of-type(2) > :last-child {
+    margin-top: 100px;
+}
+
+
 
 .my-little-square {
     width: calc(100% / 2);
     height: calc(100% / 2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-little-square > img {
+    width: 70%;
+    filter:invert(1)
 }
 
 
 .my-row-5{
     display: flex;
     justify-content: flex-start;
+    
+    
+}
+section:nth-last-child(2){
+    background-color: #B4D0E7;
     
 }
 
@@ -324,6 +469,16 @@ section .product-container > * {
 
 }
 
+.faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question .mini-container hr{
+    width: 100%;
+}
+
 
 /* 
     FOOTER
@@ -341,11 +496,13 @@ align-items: center;
 }
 
 .my-col-1-5 > * {
-    padding: 10px;
+    padding: 30px;
 }
 
-.my-col-1-5 > ul > * {
-    padding: 5px;
+
+.footer-bottom > * {
+    color: gray;
+    margin-bottom: 30px;
 }
 
 
@@ -383,30 +540,30 @@ align-items: center;
 } */
 
 /* MAIN */
-.debug main .mini-container {
+/* .debug main .mini-container {
     background-color: #676ecd;
     margin-bottom: 50px ;
     margin-top: 50px ;
-}
+} */
 
-.debug main .mini-container h2 {
+/* .debug main .mini-container h2 {
     background-color: red;
     border: 2px dashed blue;
-}
+} */
 
-.debug main .mini-container > div:first-of-type {
+/* .debug main .mini-container > div:first-of-type {
     background-color: red;
     border: 2px dashed blue;
-}
+} */
 
-.debug .mini-container .my-row .my-card-1-3 {
+/* .debug .mini-container .my-row .my-card-1-3 {
     background-color: purple;
     min-height: 500px;
-}
+} */
 
-.debug .mini-container .my-row .my-card-1-1 {
+/* .debug .mini-container .my-row .my-card-1-1 {
     background-color: red;
-}
+} */
 
 .debug .mini-container .my-row .my-card-1-1 .product-container .card-bottom  {
     min-height: 200px;
@@ -416,34 +573,34 @@ align-items: center;
     border: 2px dashed purple;
 } */
 
-.debug .my-row-3, .debug .my-row-4 {
+/* .debug .my-row-3, .debug .my-row-4 {
     background-color: purple;
-}
+} */
 
-.debug .my-row-3 > *, .debug .my-row-4 > * {
+/* .debug .my-row-3 > *, .debug .my-row-4 > * {
     border: 2px dashed orangered;
-}
+} */
 
-.debug section{
+/* .debug section{
     background-color: red;
     min-height: 100px;
-}
+} */
 
-.debug .rectangle {
+/* .debug .rectangle {
     background-color: #0093CE;
-}
+} */
 
-.debug .my-square {
+/* .debug .my-square {
     background-color: lightcoral;
     border: 2px dashed blue;
     
 
-}
+} */
 
-.debug .my-little-square {
+/* .debug .my-little-square {
     background-color: aqua;
     border: 2px dashed yellow;
-}
+} */
 
 .debug .my-row-5 {
     min-height: 300px;
@@ -457,7 +614,7 @@ align-items: center;
 }
 
 
-.debug .my-row-6 {
+/* .debug .my-row-6 {
     background-color: purple;
     border: 2px dashed red;
-}
+} */
